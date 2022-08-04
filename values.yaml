@@ -1,0 +1,32 @@
+controller:
+  serviceType: NodePort
+  ingress:
+    enabled: false
+  secondaryingress:
+    enabled: false
+  prometheus:
+    enabled: false
+  testEnabled: true
+
+agent:
+  enabled: true
+
+#Mejorar urgente, previa configuracion de StorageClass
+persistence:
+  enabled: false
+
+networkPolicy:
+  enabled: false
+
+rbac:
+  create: true
+  readSecrets: false
+
+serviceAccount:
+  create: true
+
+serviceAccountAgent:
+  create: false
+
+backup:
+  enabled: false
