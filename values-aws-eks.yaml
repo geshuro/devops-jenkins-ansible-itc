@@ -1,6 +1,7 @@
 controller:
   componentName: "jenkins-controller"
   image: "jenkins/jenkins"
+  tag: 2.368-jdk17
   resources:
   requests:
     cpu: "50m"
@@ -14,7 +15,7 @@ controller:
     - kubernetes:3600.v144b_cd192ca_a_
     - workflow-aggregator:581.v0c46fa_697ffd
     - git:4.11.3
-    - configuration-as-code:1429.v09b_044a_c93de
+    - configuration-as-code:1512.vb_79d418d5fc8
   ingress:
     enabled: false
   secondaryingress:
