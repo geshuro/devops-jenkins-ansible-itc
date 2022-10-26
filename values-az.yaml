@@ -1,6 +1,7 @@
 controller:
   componentName: "jenkins-controller"
   image: "jenkins/jenkins"
+  tag: 2.361.2-lts-jdk17
   resources:
   requests:
     cpu: "50m"
